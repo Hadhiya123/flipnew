@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my first HTML snippet.</p>
-  <button>Click Me</button>
+    
+    
+  <div class="name">
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skill">Skill</a>
+    <a href="#work">Work</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    </nav>
+    </div>
+
+ <section id="home">
+<h1>Hi,<br>
+    I'm HADHIYA</h1>
+    <img src="https://www.theloverspoint.com/wp-content/uploads/2025/04/cute-hijab-girl-profile-pic-2-1.jpeg" alt="loading picture">
+
+    <div class="about">
+<section id="about">
+  <h2><u>About</u></h2>
+  <p><strong>Iam, HADHIYA</strong><br>
+    Hi! I'm a passionate learner from Kannur, currently pursuing full stack web development at Zaithoon International Campus. 
+    After completing my +2 in Science, I decided to follow my interest in technology and start my journey into coding.
+    <br><br>
+    I'm constantly exploring HTML, CSS, JavaScript, and other tools to build websites and interactive applications.
+    I love solving problems, learning new skills, and turning creative ideas into code.
+    My dream is to become a professional web developer and build real-world projects that help people.</p>
+</div>
+
+<div class="skill1">
+  <section id="skill">
+  <div class="skill2">
+    <h2><u>Skill</u></h2>
+  </div>
+  <div class="skill3">
+    HTML-80%<br>
+    CSS -50% <br>
+    JAVASCRIPT -30%
+  </div>
+</div>
+
+
+<div class="work1">
+  <section id="work"> 
+  <div class="work2">
+    <h2><u>Work</u></h2>
+  </div>
+  <div class="work3">
+    <ul class="work4">
+      <li class="work_item">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQFceEmDlDLFhA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1687908969665?e=2147483647&v=beta&t=7INvW8QI80Q6PQ0Z-ZseVKjvmBqMRXVQEJquST7ZB-g" alt="loading_item"class="work_image">
+        <p class="work_name">Flipkart</p>
+      </li>
+      <li class="work_item">
+        <img src="https://screenshots.codesandbox.io/oitri/93.png" alt="loading_item" class="work_image">
+        <p class="work_name">starbucks</p>
+      </li>
+      <li class="work_item">
+        <img src="https://www.sitehatchery.com/wp-content/uploads/2024/06/Coke-2024-1024x593.png" alt="loading_item" class="work_image">
+        <p class="work_name">cocacola</p>
+      </li>
+    </ul>
+    </div>
+    </div>
+
+    <div class="Education1">
+      <section id="education">
+      <div class="Education2">
+        <h2><u>Education</u></h2>
+      </div>
+      <div class="Education3">COMPLETED  SSLC (2023)<br>
+        COMPLETED  +2  SCIENCE (2023-2025)</div>
+    </div>
+
+
+    <div class="contact">
+<section id="contact">
+  <h2><u>Contact</u></h2>
+  <input type="text" id="name" placeholder="Your Name"><br>
+  <input type="email" id="email" placeholder="Your Email"><br>
+  <textarea id="message" placeholder="Your Message"></textarea><br>
+  <button onclick="sendMessage()">Send</button>
+</section>
+</div>
+
+
+<footer>
+  <p> 2025 Hadhiya. All rights reserved.</p>
+</footer>
+
+
+
+
 </body>
 </html>

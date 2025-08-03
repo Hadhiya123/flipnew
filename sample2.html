@@ -1,0 +1,143 @@
+
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    #projects {
+      background-color: #fff;
+    }
+
+    .project-card {
+      border: 1px solid #ccc;
+      margin: 15px auto;
+      padding: 15px;
+      width: 80%;
+      background: #fdfdfd;
+      border-radius: 10px;
+    }
+
+    #contact {
+      background-color: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      width: 80%;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hi, I'm Hadhiya</h1>
+  <p>Web Developer | Designer | Learner</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm a passionate developer learning HTML, CSS, and JavaScript. I love building simple websites and learning new things!</p>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div id="projectList"></div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <input type="text" id="name" placeholder="Your Name"><br>
+  <input type="email" id="email" placeholder="Your Email"><br>
+  <textarea id="message" placeholder="Your Message"></textarea><br>
+  <button onclick="sendMessage()">Send</button>
+</section>
+
+<footer>
+  <p>&copy; 2025 Hadhiya. All rights reserved.</p>
+</footer>
+
+<script>
+  // Dynamic Projects List (Array + JS rendering)
+  const projects = [
+    { title: "Fruits Table", description: "A table to list fruits with JS interactivity." },
+    { title: "To-do App", description: "A basic JavaScript task tracker." },
+    { title: "Weather App", description: "Shows weather info using API (coming soon!)" }
+  ];
+
+  const projectList = document.getElementById("projectList");
+
+  projects.forEach((proj) => {
+    const div = document.createElement("div");
+    div.className = "project-card";
+    div.innerHTML = `<h3>${proj.title}</h3><p>${proj.description}</p>`;
+    projectList.appendChild(div);
+  });
+
+  // Contact form alert
+  function sendMessage() {
+    const name = document.getElementById("name").value;
+    const msg = document.getElementById("message").value;
+    if (name && msg) {
+      alert("Thanks, " + name + "! Your message has been sent.");
+    } else {
+      alert("Please enter your name and message.");
+    }
+  }
+</script>
+
+</body>
+</html>
