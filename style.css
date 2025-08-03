@@ -51,7 +51,7 @@ p{
   margin-right: 1000px;
 }
 .work1{
-  background-color: rgb(213, 217, 222);
+  background-color: rgb(240, 242, 245);
   margin-top: 150px;
   margin-right: 300px;
   margin-left: 00px;
@@ -100,7 +100,4 @@ footer {
     button:hover {
       background: #0056b3;
     }
-    .work4{
-      display: flex;
-    }
-
+    
